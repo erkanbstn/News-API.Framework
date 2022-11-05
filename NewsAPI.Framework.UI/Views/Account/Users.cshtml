@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Users";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+<div class="activity">
+    <div class="title">
+        <i class="uil uil-clock-three"></i>
+        <span class="text">Users Information</span>
+    </div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="clearTextBox();">Add New User</button><br /><br />
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>FullName</th>
+                <th>UserName</th>
+                <th>Password</th>
+                <th>Slug</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+            </tr>
+        </thead>
+        <tbody class="tbodyforuser">
+        </tbody>
+    </table>
+</div>
+

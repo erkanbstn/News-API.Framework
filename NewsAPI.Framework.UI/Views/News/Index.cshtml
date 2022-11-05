@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+<div class="activity">
+    <div class="title">
+        <i class="uil uil-clock-three"></i>
+        <span class="text">News Information</span>
+    </div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="clearTextBox();">Add New News</button><br /><br />
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>User</th>
+                <th>Slug</th>
+                <th>Active?</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+            </tr>
+        </thead>
+        <tbody class="tbody">
+        </tbody>
+    </table>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">X</button>
+                <h4 class="modal-title" id="myModalLabel">Add News</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                            <label for="NewsID">ID</label>
+                            <input type="text" class="form-control" id="NewsID" placeholder="Id" disabled="disabled" style="max-width: 100%;" />
+                        </div>
+                    <div class="form-group">
+                        <label for="Title">Title</label>
+                        <input type="text" class="form-control" id="TitleTxt" placeholder="Title" style="max-width: 100%;" />
+                    </div>
+                    <div class="form-group">
+                        <label for="Description">Description</label>
+                        <input type="text" class="form-control" id="DescriptionTxt" placeholder="Description" style="max-width: 100%;" />
+                    </div>
+                    <div class="form-group">
+                        <label for="User">User</label>
+                        <input type="text" class="form-control" id="UserTxt" placeholder="User" style="max-width: 100%;" />
+                    </div>
+                    <div class="form-group">
+                        <label for="Slug">Slug</label>
+                        <input type="text" class="form-control" id="SlugTxt" placeholder="Slug" style="max-width: 100%;" />
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btnAdd" onclick="AddNews();">Add</button>
+                <button type="button" class="btn btn-primary" id="btnUpdate" onclick="UpdateNews();">Update</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
