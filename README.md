@@ -1,8 +1,15 @@
-# NewsAPI.Framework
-For AcerPRO
+# Haber API'si
 
-1- Projeyi Klonlayın ve Direkt Başlatın
-2- Açılan Login Ekranında Herhangi Bir şey Yazmanız ve Logine Tıklamanız Yeterli, Veritabanı Oluşacaktır.
-3- Veritabanı Oluşurken İçerisine Hazır Gönderdiğim Data İle Direkt Giriş Sağlayabilirsiniz. 
-4- Username : acerpro | Password : 123
+AcerPRO için haber ve kullanıcı kaydı tutan MVC sitesi ve API.
 
+## Ne var
+
+Haber ve kullanıcı hem MVC hem API controller'ı olarak vardır. İlk açılışta veritabanı örnek kayıtlarla birlikte oluşur.
+
+## Çalıştırma
+
+Çözümü Visual Studio ile açıp başlangıç projesini çalıştırın. Veritabanı kullanan projelerde bağlantı dizesini kendi ortamınıza göre güncelleyin.
+
+## Yığın
+
+.NET Framework, Entity Framework ve Code First.
